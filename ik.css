@@ -323,8 +323,11 @@ h1{
 .waitlist-form{
     display: flex;
     gap: 0.75rem;
-    min-width: 500px;
+    max-width: 500px;
+    width: 100%;
     margin: 0 auto 2rem;
+    }
+    
 }
 .waitlist-form input{
     flex: 1;
@@ -438,22 +441,23 @@ footer{
 .footer-links a:hover{
     color: var(--primary);
 }
-@media (max-width: 400px) {
-    .waitlist-form{
+@media (max-width: 640px) {
+    .waitlist-form {
         flex-direction: column;
     }
-    .waitlist-form input{
-        width:100%;
+    
+    .waitlist-form input,
+    .waitlist-form button {
+        width: 100%;
     }
-     .waitlist-form button{
-        width:100%;
-    }
-    .conr{
+    
+    .conr {
         flex-direction: column;
+        gap: 1rem;
         text-align: center;
     }
-    .footer-links a{
+    
+    .footer-links a {
         margin: 0 0.5rem;
     }
-
 }
