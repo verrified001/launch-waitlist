@@ -1,5 +1,5 @@
-:root{
-    background-color: #0b0f19;
+:root {
+    --background-color: #0b0f19;
     --card-background: rgba(255, 225, 255, 0.08);
     --card-border: rgba(255, 255, 255, 0.08);
     --text-main: #f3f4f6;
@@ -10,43 +10,51 @@
     --radius: 12px;
     --font: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: var(--background-color);
     color: var(--text-main);
     font-family: var(--font);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
-.container{
+
+.container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
-/* navigatioon */
-.navbar{
+
+/* navigation */
+.navbar {
     padding: 1.5rem 0;
-    background-color:1px solid var(--card-border);
+    border-bottom: 1px solid var(--card-border);
 }
-.nav-container{
+
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+
+.logo {
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
     text-decoration: none;
 }
-.logo span{
+
+.logo span {
     color: var(--primary);
 }
-.badge{
+
+.badge {
     background-color: var(--card-background);
     border: 1px solid var(--card-border);
     border-radius: 500px;
@@ -54,16 +62,19 @@ body{
     color: var(--text-muted);
     font-size: 0.75rem;
 }
+
 /* hero */
-.hero{
+.hero {
     padding: 5rem 0 4rem;
     text-align: center;
 }
-.hero-container{
+
+.hero-container {
     max-width: 750px;
     margin: 0 auto;
 }
-.pill{
+
+.pill {
     display: inline-block;
     background-color: rgba(99, 102, 241, 0.01);
     border: 1px solid rgba(99, 102, 241, 0.3);
@@ -73,32 +84,37 @@ body{
     font-size: 0.85rem;
     margin-bottom: 1.5rem;
 }
-h1{
+
+h1 {
     font-size: clamp(2.2rem, 5vw, 3.5rem);
     margin-bottom: 1.25rem;
     font-weight: 800;
     line-height: 1.15;
     letter-spacing: -0.02rem;
 }
-.gradient-text{
+
+.gradient-text {
     background: var(--accent-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.subheadline{
+
+.subheadline {
     font-size: 1.125rem;
     color: var(--text-muted);
     margin-bottom: 2rem;
 }
+
 /* form */
-.waitlist-form{
+.waitlist-form {
     display: flex;
     gap: 0.75rem;
-    max-width: 460px;
+    max-width: 500px;
     width: 100%;
     margin: 0 auto 2rem;
 }
-.waitlist-form input{
+
+.waitlist-form input {
     flex: 1;
     padding: 0.875rem 1.125rem;
     background-color: #111827;
@@ -109,15 +125,17 @@ h1{
     outline: none;
     transition: border-color 0.2s;
 }
-.waitlist-form ::placeholder{
+
+.waitlist-form ::placeholder {
     color: #9ca3af;
 }
-.waitlist-form input:focus{
+
+.waitlist-form input:focus {
     border-color: var(--primary);
     background-color: #1f2937;
 }
 
-.waitlist-form button{
+.waitlist-form button {
     padding: 0.875rem 1.125rem;
     background: var(--primary);
     border: none;
@@ -128,11 +146,13 @@ h1{
     cursor: pointer;
     transition: background-color 0.2s;
 }
-.waitlist-form button:hover{
+
+.waitlist-form button:hover {
     background: var(--primary-hover);
 }
+
 /* social proof */
-.al-proof{
+.al-proof {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,10 +160,12 @@ h1{
     font-size: 0.9rem;
     color: var(--text-muted);
 }
-.avaters{
+
+.avaters {
     display: flex;
 }
-.avater{
+
+.avater {
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -155,293 +177,73 @@ h1{
     margin-right: -8px;
     font-size: 0.8rem;
 }
+
 /* feature grid */
-.features{
+.features {
     padding: 4rem 0 6rem;
 }
-.section-title{
+
+.section-title {
     text-align: center;
     font-size: 1.75rem;
-    
 }
-.feature-grid{
+
+.feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
 }
-.feature-card{
+
+.feature-card {
     background-color: var(--card-background);
-    border:1rem solid var(--card-border);
+    border: 1px solid var(--card-border);
     padding: 1rem;  
     border-radius: var(--radius);
     transition: transform 0.2s, border-color 0.2s;
 }
-.feature-card:hover{
+
+.feature-card:hover {
     transform: translateY(-3px);
-    border-color: rgba(225, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
 }
-.feature-card .icon{
+
+.feature-card .icon {
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
-.feature-card p{
+
+.feature-card p {
     color: var(--text-muted);
     font-size: 0.95rem;
 }
+
 /* footer */
-footer{
+footer {
     border-top: 1px solid var(--card-border);
     padding: 2rem 0;
     color: var(--text-muted);
     font-size: 0.875rem;
 }
-.conr{
+
+.conr {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
-.footer-links a{ 
+
+.footer-links a { 
     color: var(--text-muted);
     text-decoration: none;
     margin-left: 1.25rem;
     transition: color 0.2s;
 }
-.footer-links a:hover{
-    color: var(--primary);
-}
-@media (max-width: 400px) {
-    .waitlist-form{
-        flex-direction: column;
-    }
-    .waitlist-form input{
-        width:100%;
-    }
-     .waitlist-form button{
-        width:100%;
-    }
-    .conr{
-        flex-direction: column;
-        text-align: center;
-    }
-    .footer-links a{
-        margin: 0 0.5rem;
-    }
 
-}:root{
-    background-color: #0b0f19;
-    --card-background: rgba(255, 225, 255, 0.08);
-    --card-border: rgba(255, 255, 255, 0.08);
-    --text-main: #f3f4f6;
-    --text-muted: #9ca3af;
-    --primary: #6366f1;
-    --primary-hover: #4f46e5;
-    --accent-gradient: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
-    --radius: 12px;
-    --font: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
-}
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: var(--background-color);
-    color: var(--text-main);
-    font-family: var(--font);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-}
-.container{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-/* navigatioon */
-.navbar{
-    padding: 1.5rem 0;
-    background-color:1px solid var(--card-border);
-}
-.nav-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logo{
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-}
-.logo span{
+.footer-links a:hover {
     color: var(--primary);
-}
-.badge{
-    background-color: var(--card-background);
-    border: 1px solid var(--card-border);
-    border-radius: 500px;
-    padding: 0.25rem 0.75rem;
-    color: var(--text-muted);
-    font-size: 0.75rem;
-}
-/* hero */
-.hero{
-    padding: 5rem 0 4rem;
-    text-align: center;
-}
-.hero-container{
-    max-width: 750px;
-    margin: 0 auto;
-}
-.pill{
-    display: inline-block;
-    background-color: rgba(99, 102, 241, 0.01);
-    border: 1px solid rgba(99, 102, 241, 0.3);
-    border-radius: 50px;
-    padding: 0.35rem 1rem;
-    color: #a5b4fc;
-    font-size: 0.85rem;
-    margin-bottom: 1.5rem;
-}
-h1{
-    font-size: clamp(2.2rem, 5vw, 3.5rem);
-    margin-bottom: 1.25rem;
-    font-weight: 800;
-    line-height: 1.15;
-    letter-spacing: -0.02rem;
-}
-.gradient-text{
-    background: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.subheadline{
-    font-size: 1.125rem;
-    color: var(--text-muted);
-    margin-bottom: 2rem;
-}
-/* form */
-.waitlist-form{
-    display: flex;
-    gap: 0.75rem;
-    max-width: 460px;
-    width: 100%;
-    margin: 0 auto 2rem;
-    }
-    
-}
-.waitlist-form input{
-    flex: 1;
-    padding: 0.875rem 1.125rem;
-    background-color: #111827;
-    border: 1px solid var(--card-border);
-    border-radius: var(--radius);
-    color: #ffffff;
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.2s;
-}
-.waitlist-form ::placeholder{
-    color: #9ca3af;
-}
-.waitlist-form input:focus{
-    border-color: var(--primary);
-    background-color: #1f2937;
 }
 
-.waitlist-form button{
-    padding: 0.875rem 1.125rem;
-    background: var(--primary);
-    border: none;
-    border-radius: var(--radius);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-.waitlist-form button:hover{
-    background: var(--primary-hover);
-}
-/* social proof */
-.al-proof{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-    font-size: 0.9rem;
-    color: var(--text-muted);
-}
-.avaters{
-    display: flex;
-}
-.avater{
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background-color: #1f2937;
-    border: 2px solid var(--background-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: -8px;
-    font-size: 0.8rem;
-}
-/* feature grid */
-.features{
-    padding: 4rem 0 6rem;
-}
-.section-title{
-    text-align: center;
-    font-size: 1.75rem;
-    
-}
-.feature-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-}
-.feature-card{
-    background-color: var(--card-background);
-    border:1rem solid var(--card-border);
-    padding: 1rem;  
-    border-radius: var(--radius);
-    transition: transform 0.2s, border-color 0.2s;
-}
-.feature-card:hover{
-    transform: translateY(-3px);
-    border-color: rgba(225, 255, 255, 0.2);
-}
-.feature-card .icon{
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-.feature-card p{
-    color: var(--text-muted);
-    font-size: 0.95rem;
-}
-/* footer */
-footer{
-    border-top: 1px solid var(--card-border);
-    padding: 2rem 0;
-    color: var(--text-muted);
-    font-size: 0.875rem;
-}
-.conr{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.footer-links a{ 
-    color: var(--text-muted);
-    text-decoration: none;
-    margin-left: 1.25rem;
-    transition: color 0.2s;
-}
-.footer-links a:hover{
-    color: var(--primary);
-}
+/* mobile responsive rules */
 @media (max-width: 640px) {
     .waitlist-form {
         flex-direction: column;
@@ -449,7 +251,7 @@ footer{
     
     .waitlist-form input,
     .waitlist-form button {
-        width: 90%;
+        width: 100%;
     }
     
     .conr {
